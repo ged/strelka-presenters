@@ -1,0 +1,4 @@
+coverage/
+\.esproj/
+\.yml$
+spec/\.status
