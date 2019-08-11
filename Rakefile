@@ -14,7 +14,6 @@ Hoe.plugin :signing
 Hoe.plugin :deveiate
 
 Hoe.plugins.delete :rubyforge
-Hoe.plugins.delete :gemcutter # Remove for public gems
 
 hoespec = Hoe.spec 'strelka-presenters' do |spec|
 
