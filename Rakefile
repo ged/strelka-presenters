@@ -22,6 +22,12 @@ hoespec = Hoe.spec 'strelka-presenters' do |spec|
 
 	spec.extra_rdoc_files = FileList[ '*.rdoc', '*.md' ]
 	spec.license 'BSD-3-Clause'
+	spec.urls = {
+		home:   'https://bitbucket.org/ged/strelka-presenters',
+		code:   'https://bitbucket.org/ged/strelka-presenters/src',
+		docs:   'https://deveiate.org/code/strelka-presenters',
+		github: 'https://github.com/ged/strelka-presenters',
+	}
 
 	spec.developer 'Michael Granger', 'ged@FaerieMUD.org'
 
@@ -83,7 +89,7 @@ task GEMSPEC do |task|
 	spec.files.delete( '.gemtest' )
 	spec.signing_key = nil
 	spec.cert_chain = ['certs/ged.pem']
-	spec.version = "#{spec.version.bump}.pre#{Time.now.strftime("%Y%m%d%H%M%S")}"
+	spec.version = "#{spec.version.bump}.0.pre#{Time.now.strftime("%Y%m%d%H%M%S")}"
 	File.open( task.name, 'w' ) do |fh|
 		fh.write( spec.to_ruby )
 	end

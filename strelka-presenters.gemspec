@@ -1,20 +1,20 @@
 # -*- encoding: utf-8 -*-
-# stub: strelka-presenters 0.1.pre20190811121634 ruby lib
+# stub: strelka-presenters 0.1.0.pre20190812202657 ruby lib
 
 Gem::Specification.new do |s|
   s.name = "strelka-presenters".freeze
-  s.version = "0.1.pre20190811121634"
+  s.version = "0.1.0.pre20190812202657"
 
   s.required_rubygems_version = Gem::Requirement.new("> 1.3.1".freeze) if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib".freeze]
   s.authors = ["Michael Granger".freeze]
   s.cert_chain = ["certs/ged.pem".freeze]
-  s.date = "2019-08-11"
+  s.date = "2019-08-13"
   s.description = "".freeze
   s.email = ["ged@FaerieMUD.org".freeze]
   s.extra_rdoc_files = ["History.md".freeze, "LICENSE.txt".freeze, "Manifest.txt".freeze, "README.md".freeze, "History.md".freeze, "README.md".freeze]
   s.files = [".document".freeze, ".rdoc_options".freeze, ".simplecov".freeze, "ChangeLog".freeze, "History.md".freeze, "LICENSE.txt".freeze, "Manifest.txt".freeze, "README.md".freeze, "Rakefile".freeze, "lib/strelka/app/presenters.rb".freeze, "lib/strelka/httpresponse/presenters.rb".freeze, "lib/strelka/presenters.rb".freeze, "spec/spec_helper.rb".freeze, "spec/strelka/app/presenters_spec.rb".freeze, "spec/strelka/httpresponse/presenters_spec.rb".freeze, "spec/strelka/presenters_spec.rb".freeze, "spec/testlib.rb".freeze, "spec/testlib/base.rb".freeze, "spec/testlib/fixtures.rb".freeze, "spec/testlib/fixtures/groups.rb".freeze, "spec/testlib/fixtures/users.rb".freeze, "spec/testlib/group.rb".freeze, "spec/testlib/presenters.rb".freeze, "spec/testlib/user.rb".freeze]
-  s.homepage = "home".freeze
+  s.homepage = "https://bitbucket.org/ged/strelka-presenters".freeze
   s.licenses = ["BSD-3-Clause".freeze]
   s.rdoc_options = ["--main".freeze, "README.md".freeze]
   s.required_ruby_version = Gem::Requirement.new(">= 2.5.0".freeze)
