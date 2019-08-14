@@ -1,10 +1,10 @@
-# strelka-Presenters
+# Strelka-Presenters
 
 home
-: http://deveiate.org/projects/strelka-Presenters
+: http://deveiate.org/projects/strelka-presenters
 
 code
-: http://bitbucket.org/ged/strelka-Presenters
+: http://bitbucket.org/ged/strelka-presenters
 
 github
 : https://github.com/ged/strelka-presenters
