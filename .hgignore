@@ -1,5 +1,5 @@
 coverage/
-\.esproj/
+doc/
 \.yml$
 spec/\.status
 ^ChangeLog$

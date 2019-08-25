@@ -15,8 +15,35 @@ docs
 
 ## Description
 
+Strelka-Presenters is a plugin for the Strelka web framework that adds
+integration with the [Yaks hypermedia library][Yaks].
 
+### Usage
 
+Load the plugin in your Strelka app, passing the Yaks configuration block:
+
+    class Example::App < Strelka::App
+  
+      plugin :presenters do
+        default_format :hal
+        rel_template 'https://example.com/rels/{rel}'
+        mapper_namespace Example::Service::Presenters
+      end
+
+      plugin :router
+      
+      get 'users' do |request|
+        users = Example::Users.all
+        response = request.response
+        response.present( users )
+        return response
+      end
+
+    end
+
+Your app will automatically load the `negotiation` plugin, and responses will have a #present method that will map objects passed to it using Yaks into an acceptable response format using HTTP content negotiation.
+
+See the documentation for [Yaks][] for more info.
 
 ## Prerequisites
 
@@ -31,8 +58,8 @@ docs
 ## Contributing
 
 You can check out the current development source with Mercurial via its
-{project page}[http://bitbucket.org/ged/strelka-presenters]. Or if you prefer Git, via 
-{its Github mirror}[https://github.com/ged/strelka-presenters].
+[project page][project]. Or if you prefer Git, via
+[its Github mirror][gitmirror].
 
 After checking out the source, run:
 
@@ -72,4 +99,9 @@ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+
+
+[project]: http://bitbucket.org/ged/strelka-presenters
+[Yaks]: https://github.com/plexus/yaks/blob/master/yaks/README.md
+[gitmirror]: https://github.com/ged/strelka-presenters
 
